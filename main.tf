@@ -14,11 +14,21 @@ provider "aws" {
   region  = "eu-west-1"
 }
 
-resource "aws_instance" "app_server" {
+resource "aws_instance" "Jenkins_Server_1" {
   ami           = "ami-09ce2fc392a4c0fbc"
   instance_type = "t2.micro"
 
   tags = {
-    Name = "ExampleAppServerInstance"
+    Name = "Jenkins-Server-1"
   }
 }
+
+resource "aws_instance" "Jenkins_Server_2" {
+  ami           = "ami-09ce2fc392a4c0fbc"
+  instance_type = "t2.micro"
+
+  tags = {
+    Name = "Jenkins-Server-2"
+  }
+}
+
