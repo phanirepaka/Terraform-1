@@ -64,6 +64,7 @@ inline = [
         "sudo chown -R jenkins:jenkins jobs",
         "sudo /etc/init.d/jenkins start",
         "sudo /etc/init.d/jenkins status",
+        "sudo cat /var/lib/jenkins/secrets/initialAdminPassword",
         ]
    }
 }
@@ -106,6 +107,7 @@ inline = [
         "sudo chown -R jenkins:jenkins jobs",
         "sudo /etc/init.d/jenkins start",
         "sudo /etc/init.d/jenkins status",
+        "sudo cat /var/lib/jenkins/secrets/initialAdminPassword",
         ]
    }
 }
