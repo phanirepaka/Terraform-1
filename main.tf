@@ -41,7 +41,7 @@ resource "null_resource" "configure_nfs" {
         type     = "ssh"
         user     = "ec2-user"
         #private_key = file("/home/ec2-user/learn-terraform-aws-instance/Wasim-AWS-key.pem")
-        private_key = "https://github.com/wasim30/Terraform/blob/main/Wasim-AWS-key.pem")
+        private_key = "https://github.com/wasim30/Terraform/blob/main/Wasim-AWS-key.pem"
         host = aws_instance.ec2[0].public_ip
         timeout = "5m"
         agent = false
