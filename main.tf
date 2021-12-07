@@ -106,8 +106,6 @@ inline = [
         "sudo /etc/init.d/jenkins start",
         "sudo /etc/init.d/jenkins status",
         "sudo cat /var/lib/jenkins/secrets/initialAdminPassword",
-        "sudo cp -r "${file("jenkins_reload.sh")}" /opt/,
-        "sudo chmod -R 755 /opt/"${file("jenkins_reload.sh")}",
         ]
    }
 }
